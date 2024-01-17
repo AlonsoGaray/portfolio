@@ -3,22 +3,39 @@ import SocialContainer from './SocialContainer.astro'
 import LinkedInIcon from './icons/LinkedIn.astro'
 import GitHubIcon from './icons/Github.astro'
 import MailIcon from './icons/Mail.astro'
+import DownloadIcon from './icons/Download.astro'
 ---
 
-<section id='about' class='flex justify-around items-center w-full p-4 mt-24'>
+<section id='about' class='flex justify-around items-center w-full p-4 pt-20'>
   <img class='rounded-full size-52' src='/alonso.webp' alt='alonso photo' />
 
-  <div class=''>
-    <h1 class='text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold'>Hi, i'm Alonso Garay</h1>
-
-    <h2 class='text-xl text-pretty max-w-[700px] text-black dark:text-white mt-6'>
-      Full-Stack Developer, for over 2 years, specialized in creating, maintaining and improving modern web applications
-      using JavaScript/TypeScript. Skilled in React, Spring Boot, AWS, Node.js, DynamoDB, MySQL, and Git. Dedicated to
-      delivering high-quality and innovative solutions.
+  <div>
+    <div class='flex items-center gap-4'>
+      <h1
+        class='text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold'
+      >
+        Hi, i'm Alonso Garay
+      </h1>
+      <SocialContainer target='_blank'>
+        <DownloadIcon class='size-4 md:size-5' />
+        Download CV
+      </SocialContainer>
+    </div>
+    <h2
+      class='text-xl text-pretty max-w-[700px] text-black dark:text-white pt-6'
+    >
+      Full-Stack Developer, for over 2 years, specialized in creating,
+      maintaining and improving modern web applications using
+      JavaScript/TypeScript. Skilled in React, Spring Boot, AWS, Node.js,
+      DynamoDB, MySQL, and Git. Dedicated to delivering high-quality and
+      innovative solutions.
     </h2>
 
-    <nav class='flex gap-4 mt-6 flex-wrap'>
-      <SocialContainer target='_blank' href='https://www.linkedin.com/in/alonsogaray/'>
+    <nav class='flex gap-4 pt-6 flex-wrap'>
+      <SocialContainer
+        target='_blank'
+        href='https://www.linkedin.com/in/alonsogaray/'
+      >
         <LinkedInIcon class='size-4 md:size-6' />
         LinkedIn
       </SocialContainer>
