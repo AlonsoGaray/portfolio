@@ -1,0 +1,144 @@
+---
+import JobIcon from '../components/icons/Job.astro'
+import JobTitle from '../components/JobTitle.astro'
+---
+
+<section class='px-32' id='experience'>
+  <div id='accordion-open' data-accordion='open'>
+    <ol class='relative border-s border-gray-200 dark:border-gray-700'>
+      <li class='mb-10 ms-6'>
+        <div id='accordion-open-heading-1'>
+          <button
+            type='button'
+            class='flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3'
+            data-accordion-target='#accordion-open-body-1'
+            aria-expanded='true'
+            aria-controls='accordion-open-body-1'
+          >
+            <JobIcon />
+            <JobTitle>
+              Full Stack Developer - Ensolvers
+              <span
+                class='bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-bush-400 dark:text-bush-950 ms-3'
+              >
+                Current
+              </span>
+            </JobTitle>
+            <time
+              class='block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'
+            >
+              Jun 2022 - Present
+            </time>
+          </button>
+        </div>
+        <ul
+          class='ms-4 list-disc text-pretty hidden'
+          id='accordion-open-body-1'
+          aria-labelledby='accordion-open-heading-1'
+        >
+          <li>
+            Supported and maintained multiple projects including Nue.Life,
+            Ticketon, and Hyros/Htalk as a Full Stack Developer.
+          </li>
+          <li>
+            Developed and successfully implemented REST APIs using Java and
+            Spring Boot, resulting in improved efficiency and responsiveness of
+            the application.
+          </li>
+          <li>
+            Implemented and enhanced User Interfaces designs using React,
+            TypeScript, and Material UI.
+          </li>
+        </ul>
+      </li>
+      <li class='mb-10 ms-6'>
+        <div id='accordion-open-heading-2'>
+          <button
+            type='button'
+            class='flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3'
+            data-accordion-target='#accordion-open-body-2'
+            aria-expanded='true'
+            aria-controls='accordion-open-body-2'
+          >
+            <JobIcon />
+            <JobTitle>Full Stack Developer - Make it Real</JobTitle>
+            <time
+              class='block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'
+            >
+              Nov 2021 - Feb 2022 · 4 months
+            </time>
+          </button>
+          <ul
+            class='ms-4 list-disc text-pretty hidden'
+            id='accordion-open-body-2'
+            aria-labelledby='accordion-open-heading-2'
+          >
+            <li>
+              Implemented full stack development techniques to create highly
+              functional and user-friendly applications.
+            </li>
+            <li>
+              Successfully collaborated with a team on the development of Clens,
+              contributing to its successful launch and positive user feedback.
+            </li>
+            <li>
+              Successfully develop the web app Interguide (personal project).
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class='mb-10 ms-6'>
+        <JobIcon />
+        <JobTitle>Solution Assistant - Level 1 - Everis (NTT Data)</JobTitle>
+        <time
+          class='block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'
+        >
+          Nov 2019 - Jul 2020 · 9 months
+        </time>
+        <ul class='ms-4 list-disc text-pretty'>
+          <li>
+            Supported and maintained the Pacifico Seguros' Ecommerce SOAT Online
+            project, ensuring smooth operations and minimizing downtime.
+          </li>
+          <li>
+            Analyzed and resolved incidences, problems, and requirements managed
+            through ServiceNow for web portals, achieving a 20% reduction in
+            ticket resolution time.
+          </li>
+        </ul>
+      </li>
+      <li class='ms-6'>
+        <JobIcon />
+        <JobTitle>Front Desk - Customer Support -</JobTitle>
+        <time
+          class='block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'
+        >
+          Dec 2017 - Mar 2018 · 4 months
+        </time>
+        <ul class='ms-4 list-disc text-pretty'>
+          <li>
+            Mentor and support my colleagues with technical or communication
+            skills.
+          </li>
+          <li>
+            Receive calls, provide requested information and transfer calls.
+          </li>
+          <li>Take reservations over the telephone.</li>
+          <li>
+            Answer queries regarding the hotel's services, charges, dining
+            facilities, sports facilities and travel directions.
+          </li>
+          <li>
+            Refer guests to appropriate departments to resolve complaints or
+            provide suggestions.
+          </li>
+          <li>Compute bills and take payments.</li>
+          <li>
+            Contact housekeeping and maintenance departments when a problem is
+            reported.
+          </li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+</section>
