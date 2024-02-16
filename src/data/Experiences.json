@@ -1,0 +1,103 @@
+[
+  {
+    "id": 4,
+    "title": "Full Stack Developer",
+    "company": "Ensolvers",
+    "current": true,
+    "startDate": "Jun 2022",
+    "endDate": "",
+    "description": [
+      "Supported and maintained multiple projects including Nue.Life, Ticketon, and Hyros/Htalk as a Full Stack Developer.",
+      "Developed and successfully implemented REST APIs using Java and Spring Boot, resulting in improved efficiency and responsiveness of the application.",
+      "Implemented and enhanced User Interfaces designs using React, TypeScript, and Material UI."
+    ],
+    "skills": [
+      "TypeScript",
+      "AWS",
+      "React",
+      "JavaScript",
+      "Node.js",
+      "Spring Boot",
+      "Express.js",
+      "Git",
+      "Jira",
+      "REST APIs",
+      "Socket.io",
+      "Bitbucket",
+      "Amazon CloudWatch",
+      "AWS CodeCommit",
+      "Scrum"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Full Stack Developer",
+    "company": "Make it Real",
+    "current": false,
+    "startDate": "Nov 2021",
+    "endDate": "Feb 2022",
+    "timeAge": "4 months",
+    "description": [
+      "Implemented full stack development techniques to create highly functional and user-friendly applications.",
+      "Successfully collaborated with a team on the development of Clens, contributing to its successful launch and positive user feedback.",
+      "Successfully develop the web app Interguide (personal project)."
+    ],
+    "skills": [
+      "Netlify",
+      "MongoDB",
+      "Jira",
+      "Node.js",
+      "Socket.io",
+      "Heroku",
+      "React",
+      "MERN Stack",
+      "GitHub",
+      "Git",
+      "Express.js",
+      "Scrum"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Solution Assistant - Level 1",
+    "company": "Everis (NTT Data)",
+    "current": false,
+    "startDate": "Nov 2019",
+    "endDate": "Jul 2020",
+    "timeAge": "9 months",
+    "description": [
+      "Supported and maintained the Pacifico Seguros' Ecommerce SOAT Online project, ensuring smooth operations and minimizing downtime.",
+      "Analyzed and resolved incidences, problems, and requirements managed through ServiceNow for web portals, achieving a 20% reduction in ticket resolution time."
+    ],
+    "skills": [
+      "Liferay",
+      "WinSCP",
+      "Jira",
+      "Trello",
+      "Jenkins",
+      "React",
+      "Bitbucket ",
+      "Git",
+      "Git-Fork"
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Back Desk - Customer Support",
+    "company": "Freelance",
+    "current": false,
+    "startDate": "Dec 2017",
+    "endDate": "Mar 2018",
+    "timeAge": "4 months",
+    "description": [
+      "Mentor and support my colleagues with technical or communication skills.",
+      "Receive calls, provide requested information and transfer calls.",
+      "Take reservations over the telephone.",
+      "Answer queries regarding the hotel's services, charges, dining facilities, sports facilities and travel directions.",
+      "Refer guests to appropriate departments to resolve complaints or provide suggestions.",
+      "Compute bills and take payments.",
+      "Contact housekeeping and maintenance departments when a problem is reported."
+    ],
+    "skills": []
+  }
+]
