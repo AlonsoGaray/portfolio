@@ -1,9 +1,10 @@
 ---
 import JobIcon from '../components/icons/Job.astro'
-import JobTitle from '../components/JobTitle.astro'
+import ExperienceTitle from '../components/Experience/ExperienceTitle.astro'
 import Experiences from '../data/Experiences.json'
 import ArrowIcon from '../components/icons/Arrow.astro'
-import ExperienceButton from '../components/ExperienceButton.astro'
+import ExperienceButton from '../components/Experience/ExperienceButton.astro'
+import ExperienceTime from '../components/Experience/ExperienceTime.astro'
 ---
 
 <section class='px-24' id='experience'>
@@ -22,20 +23,20 @@ import ExperienceButton from '../components/ExperienceButton.astro'
                   <JobIcon class='text-blue-900 dark:text-bush-950 size-4' />
                 </span>
                 <div class='flex flex-col items-start'>
-                  <JobTitle>
+                  <ExperienceTitle>
                     {exp.title} - {exp.company}
                     {exp.current && (
                       <span class='bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-bush-400 dark:text-bush-950 ms-3'>
                         Current
                       </span>
                     )}
-                  </JobTitle>
-                  <time class='block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'>
-                    {exp.startDate} -{' '}
-                    {exp.current
-                      ? 'Present'
-                      : `${exp.endDate} · ${exp.timeAge}`}
-                  </time>
+                  </ExperienceTitle>
+                  <ExperienceTime
+                    startDate={exp.startDate}
+                    current={exp.current}
+                    endDate={exp.endDate}
+                    timeAge={exp.timeAge}
+                  />
                 </div>
                 <ArrowIcon data-accordion-icon class='w-3 h-3 shrink-0' />
               </ExperienceButton>
