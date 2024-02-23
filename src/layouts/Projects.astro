@@ -1,23 +1,53 @@
 ---
-import CodeIcon from '../components/icons/Code.astro'
+import CodeIconOpen from '../components/icons/OpenCode.astro'
+import CodeIconClose from '../components/icons/CloseCode.astro'
 import ProjectsArray from '../data/Projects.json'
+import Github from '../components/icons/Github.astro'
+import ExternalLink from '../components/icons/ExternalLink.astro'
 ---
 
 <section class='w-full flex flex-col px-28' id='projects'>
-  <h2 class='flex text-3xl items-center mb-6 gap-1'>
-    <CodeIcon class='size-8' /> Projects
+  <h2 class='flex text-3xl items-center justify-center mb-6 gap-2'>
+    <CodeIconOpen class='size-8' />
+    Projects
+    <CodeIconClose class='size-8' />
   </h2>
-  <article class='flex flex-col'>
+  <article class='grid grid-cols-1 gap-8 md:grid-cols-3 items-start'>
     {
       ProjectsArray.map((pro) => (
-        <div class='flex gap-2'>
-          <div class='w-1/2'>
-            <img class='' src={pro.image} alt={pro.link} />
-          </div>
+        <div class='flex flex-col mx-auto md:justify-center'>
+          <a
+            href={pro.externalUrl}
+            target='_blank'
+            class='transition hover:scale-105'
+          >
+            <img
+              class='w-full rounded-xl'
+              loading='lazy'
+              src={pro.image}
+              alt={pro.title}
+            />
+          </a>
 
-          <div class='flex flex-col w-1/2'>
-            <h3 class='text-2xl'>{pro.title}</h3>
-            <p class='text-lg'>{pro.description}</p>
+          <div class='flex flex-col w-full px-2 pt-5'>
+            <div class='flex justify-between'>
+              <h3 class='text-lg lg:text-xl font-bold text-pretty'>
+                {pro.title}
+              </h3>
+              <div class='flex space-x-2'>
+                <a href={pro.github} target='_blank'>
+                  <Github class='text-lochmara-800' />
+                </a>
+                {pro.externalUrl && (
+                  <a href={pro.externalUrl} target='_blank'>
+                    <ExternalLink class='text-lochmara-800' />
+                  </a>
+                )}
+              </div>
+            </div>
+            <p class='text-md text-left text-gray-400 dark:text-gray-500 lg:text-lg text-pretty'>
+              {pro.description}
+            </p>
           </div>
         </div>
       ))

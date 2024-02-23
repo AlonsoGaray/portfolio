@@ -1,15 +1,29 @@
 [
   {
-    "title": "Interguide - Community to help devs for interviews.",
-    "description": "Community where devs post their interview questions to help others thrives in their futures interview.",
-    "link": "https://interguide.netlify.app/",
+    "title": "Pokemon TCG Collector",
+    "description": "Website to keep track of your Pokémon TCG collection.",
+    "externalUrl": "https://eot-test-frontend-agp.vercel.app/",
+    "github": "https://github.com/AlonsoGaray/eot-test-frontend",
+    "image": "/projects/pokemon.webp"
+  },
+  {
+    "title": "My Notes",
+    "description": "Website to create, tag and organize all your notes.",
+    "externalUrl": "https://alonsogp-my-notes.netlify.app/",
+    "github": "https://github.com/AlonsoGaray/my-notes",
+    "image": "/projects/notes.webp"
+  },
+  {
+    "title": "Interguide",
+    "description": "Community where developers share the questions they were asked in interviews to help others thrives in their future interviews.",
+    "externalUrl": "https://interguide.netlify.app/",
     "github": "https://github.com/AlonsoGaray/interguide-front",
     "image": "/projects/interguide.webp"
   },
   {
-    "title": "Clens - Best cleaning services.",
-    "description": "Platform to request home cleaning services.",
-    "link": "https://clens.netlify.app/",
+    "title": "Clens",
+    "description": "Maintain a clean and sanitized home with personalized cleaning services from Clens.",
+    "externalUrl": "https://clens.netlify.app/",
     "github": "https://github.com/GilbertHuarcaya/top-v17-frontend-clens",
     "image": "/projects/clens.webp"
   }
