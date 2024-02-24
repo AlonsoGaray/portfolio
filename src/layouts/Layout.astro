@@ -24,6 +24,17 @@ const { title } = Astro.props
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='generator' content={Astro.generator} />
     <title>{title}</title>
+    <script>
+      if (
+        localStorage.getItem('color-theme') === 'dark' ||
+        (!('color-theme' in localStorage) &&
+          window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
   </head>
   <body class='max-w-screen-xl m-auto flex flex-col gap-20'>
     <Header />
@@ -37,9 +48,6 @@ const { title } = Astro.props
   </body>
 </html>
 <style is:global>
-  :root {
-    color-scheme: light dark;
-  }
   html {
     font-family: 'Onest Variable', sans-serif;
   }
