@@ -6,13 +6,16 @@ import MailIcon from '../components/icons/Mail.astro'
 import DownloadIcon from '../components/icons/Download.astro'
 ---
 
-<section id='about' class='flex justify-between items-center w-full px-28'>
-  <img class='rounded-full size-52' src='/alonso.webp' alt='alonso photo' />
+<section
+  id='about'
+  class='flex w-full flex-col items-center justify-between gap-4 px-8 lg:flex-row lg:px-28'
+>
+  <img class='size-52 rounded-full' src='/alonso.webp' alt='alonso photo' />
 
-  <div>
-    <div class='flex items-center gap-4'>
+  <div class='flex flex-col gap-4'>
+    <div class='flex items-center justify-center gap-4 lg:justify-start'>
       <h1
-        class='text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold'
+        class='text-3xl font-bold text-gray-900 dark:text-white md:text-4xl lg:text-5xl'
       >
         Hi, i'm Alonso Garay
       </h1>
@@ -21,9 +24,7 @@ import DownloadIcon from '../components/icons/Download.astro'
         Download CV
       </SocialContainer>
     </div>
-    <h2
-      class='text-xl text-pretty max-w-[700px] text-black dark:text-white pt-6'
-    >
+    <h2 class='max-w-[700px] text-pretty text-xl text-black dark:text-white'>
       Full-Stack Developer, for over 2 years, specialized in creating,
       maintaining and improving modern web applications using
       JavaScript/TypeScript. Skilled in React, Spring Boot, AWS, Node.js,
@@ -31,7 +32,7 @@ import DownloadIcon from '../components/icons/Download.astro'
       innovative solutions.
     </h2>
 
-    <nav class='flex gap-4 pt-6 flex-wrap'>
+    <nav class='flex flex-wrap justify-center gap-4 lg:justify-start'>
       <SocialContainer
         target='_blank'
         href='https://www.linkedin.com/in/alonsogaray/'
