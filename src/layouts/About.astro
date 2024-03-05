@@ -4,6 +4,7 @@ import LinkedInIcon from '../components/icons/LinkedIn.astro'
 import GitHubIcon from '../components/icons/Github.astro'
 import MailIcon from '../components/icons/Mail.astro'
 import DownloadIcon from '../components/icons/Download.astro'
+import PeruIcon from '../components/icons/Peru.astro'
 ---
 
 <section
@@ -20,10 +21,7 @@ import DownloadIcon from '../components/icons/Download.astro'
         Hi, i'm Alonso Garay
       </h1>
       <!-- TODO: Add Peru flag and move Download -->
-      <SocialContainer href='/projects/cv.pdf' download='Alonso Garay - CV'>
-        <DownloadIcon class='size-4 md:size-5' />
-        Download CV
-      </SocialContainer>
+      <PeruIcon class='h-20 w-20' />
     </div>
     <h2 class='max-w-[700px] text-pretty text-xl text-black dark:text-white'>
       Full-Stack Developer, for over 2 years, specialized in creating,
@@ -34,6 +32,10 @@ import DownloadIcon from '../components/icons/Download.astro'
     </h2>
 
     <nav class='flex flex-wrap justify-center gap-4 lg:justify-start'>
+      <SocialContainer href='/cv.pdf' download='Alonso Garay - CV'>
+        <DownloadIcon class='size-4 md:size-5' />
+        Download CV
+      </SocialContainer>
       <SocialContainer
         target='_blank'
         href='https://www.linkedin.com/in/alonsogaray/'
