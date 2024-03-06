@@ -22,7 +22,7 @@ import ExperienceTime from '../components/Experience/ExperienceTime.astro'
     <ol class='relative border-s border-cod-gray-900 dark:border-gray-700'>
       {
         Experiences.map((exp) => (
-          <>
+          <li>
             <h2 id={`accordion-open-heading-${exp.id}`} class='ms-6 mt-3'>
               <ExperienceButton id={exp.id}>
                 <span class='absolute -start-3 flex size-6 items-center justify-center rounded-full bg-blue-100 ring-8 ring-white dark:bg-bush-400 dark:ring-gray-900'>
@@ -59,7 +59,7 @@ import ExperienceTime from '../components/Experience/ExperienceTime.astro'
                 <li>{desc}</li>
               ))}
             </ul>
-          </>
+          </li>
         ))
       }
     </ol>

@@ -37,11 +37,19 @@ import ExternalLink from '../components/icons/ExternalLink.astro'
                 {pro.title}
               </h3>
               <div class='flex space-x-2'>
-                <a href={pro.github} target='_blank'>
+                <a
+                  href={pro.github}
+                  target='_blank'
+                  aria-label={`Link to ${pro.title} github`}
+                >
                   <Github class='text-lochmara-800' />
                 </a>
                 {pro.externalUrl && (
-                  <a href={pro.externalUrl} target='_blank'>
+                  <a
+                    href={pro.externalUrl}
+                    target='_blank'
+                    aria-label={`Link to ${pro.title} website`}
+                  >
                     <ExternalLink class='text-lochmara-800' />
                   </a>
                 )}
