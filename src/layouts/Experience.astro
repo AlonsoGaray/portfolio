@@ -7,7 +7,10 @@ import ExperienceButton from '../components/Experience/ExperienceButton.astro'
 import ExperienceTime from '../components/Experience/ExperienceTime.astro'
 ---
 
-<section class='flex w-full flex-col px-8 lg:px-28' id='experience'>
+<section
+  class='flex w-full scroll-mt-24 flex-col px-8 lg:px-28'
+  id='experience'
+>
   <h2
     class='mb-6 flex items-center justify-center gap-2 text-3xl dark:text-white'
   >
@@ -41,7 +44,10 @@ import ExperienceTime from '../components/Experience/ExperienceTime.astro'
                     timeAge={exp.timeAge}
                   />
                 </div>
-                <ArrowIcon data-accordion-icon class='h-3 w-3 shrink-0' />
+                <ArrowIcon
+                  data-accordion-icon
+                  class='h-3 w-3 shrink-0 rotate-180 text-white'
+                />
               </ExperienceButton>
             </h2>
             <ul
