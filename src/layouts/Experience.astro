@@ -11,28 +11,26 @@ import ExperienceTime from '../components/Experience/ExperienceTime.astro'
   class='flex w-full scroll-mt-24 flex-col px-8 lg:px-28'
   id='experience'
 >
-  <h2
-    class='mb-6 flex items-center justify-center gap-2 text-3xl dark:text-white'
-  >
+  <h2 class='mb-6 flex items-center justify-center gap-2 text-3xl text-white'>
     <JobIcon class='size-8' />
     Experience
     <JobIcon class='size-8' />
   </h2>
   <div id='accordion-open' data-accordion='open' class='w-full'>
-    <ol class='relative border-s border-cod-gray-900 dark:border-gray-700'>
+    <ol class='relative border-s border-gray-700'>
       {
         Experiences.map((exp) => (
           <li>
             <h2 id={`accordion-open-heading-${exp.id}`} class='ms-6 mt-3'>
               <ExperienceButton id={exp.id}>
-                <span class='absolute -start-3 flex size-6 items-center justify-center rounded-full bg-blue-100 ring-8 ring-white dark:bg-bush-400 dark:ring-gray-900'>
-                  <JobIcon class='size-4 text-blue-900 dark:text-bush-950' />
+                <span class='absolute -start-3 flex size-6 items-center justify-center rounded-full bg-bush-400 ring-8 ring-gray-900'>
+                  <JobIcon class='size-4 text-bush-950' />
                 </span>
                 <div class='flex flex-col items-start'>
                   <ExperienceTitle>
                     {exp.title} - {exp.company}
                     {exp.current && (
-                      <span class='me-2 ms-3 rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-bush-400 dark:text-bush-950'>
+                      <span class='me-2 ms-3 rounded bg-bush-400 px-2.5 py-0.5 text-sm font-medium  text-bush-950'>
                         Current
                       </span>
                     )}
@@ -48,7 +46,7 @@ import ExperienceTime from '../components/Experience/ExperienceTime.astro'
               </ExperienceButton>
             </h2>
             <ul
-              class='mb-4 ms-6 hidden list-disc text-pretty rounded-lg rounded-t-none border border-t-0 border-cod-gray-900 pb-4 pr-2 ps-10 dark:border-gray-500 dark:text-white'
+              class='mb-4 ms-6 hidden list-disc text-pretty rounded-lg rounded-t-none border border-t-0 border-gray-500 pb-4 pr-2 ps-10 text-white'
               id={`accordion-open-body-${exp.id}`}
               aria-labelledby={`accordion-open-heading-${exp.id}`}
             >
