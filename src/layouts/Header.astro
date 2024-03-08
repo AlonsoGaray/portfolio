@@ -5,17 +5,52 @@ const sections = ['About', 'Experience', 'Projects']
 <header
   class='sticky top-0 z-50 flex items-center justify-between border-b bg-cod-gray-950 p-4 text-white'
 >
-  <h2><a href='#about'> Alonso Garay</a></h2>
-  <nav class='ml-1 flex items-center gap-4'>
-    {
-      sections.map((sec) => (
-        <a
-          href={`#${sec.toLowerCase()}`}
-          class='hover:scale-110  hover:text-gray-400'
-        >
-          {sec}
-        </a>
-      ))
-    }
+  <h2><a href='#about'>Alonso Garay</a></h2>
+
+  <nav class='relative ml-1 flex items-center gap-4 border-gray-200'>
+    <button
+      data-collapse-toggle='navbar-default'
+      type='button'
+      class='inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-white hover:bg-gray-100 hover:bg-opacity-10 sm:hidden'
+      aria-controls='navbar-default'
+      aria-expanded='false'
+    >
+      <span class='sr-only'>Open main menu</span>
+      <svg
+        class='h-5 w-5'
+        aria-hidden='true'
+        xmlns='http://www.w3.org/2000/svg'
+        fill='none'
+        viewBox='0 0 17 14'
+      >
+        <path
+          stroke='currentColor'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+          stroke-width='2'
+          d='M1 1h15M1 7h15M1 13h15'></path>
+      </svg>
+    </button>
+    <div
+      class='absolute right-0.5 top-11 hidden w-fit bg-cod-gray-950 sm:static sm:flex sm:w-auto'
+      id='navbar-default'
+    >
+      <ul
+        class='flex flex-col rounded-lg border border-gray-700 p-4 font-medium sm:mt-0 sm:flex-row sm:space-x-8 sm:border-0 sm:p-0 rtl:space-x-reverse'
+      >
+        {
+          sections.map((sec) => (
+            <li>
+              <a
+                href={`#${sec.toLowerCase()}`}
+                class='block rounded px-3 py-2 text-white hover:scale-110 hover:bg-gray-100 hover:bg-opacity-10 hover:text-blue-500 sm:hover:bg-transparent'
+              >
+                {sec}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
   </nav>
 </header>
