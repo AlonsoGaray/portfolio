@@ -3,7 +3,7 @@ const { startDate, current, endDate, timeAge } = Astro.props
 ---
 
 <time
-  class='mb-2 block text-sm font-semibold leading-none text-gray-400 group-hover:text-cod-gray-200'
+  class='mb-2 block text-sm font-semibold leading-none text-gray-400 delay-100 group-hover:text-cod-gray-200'
 >
   {startDate} -{' '}
   {current ? 'Present' : `${endDate} · ${timeAge}`}

@@ -8,7 +8,7 @@ import ExperienceTime from '../components/Experience/ExperienceTime.astro'
 ---
 
 <section
-  class='flex w-full scroll-mt-24 flex-col px-8 lg:px-28'
+  class='flex scroll-mt-24 flex-col px-8 md:w-full lg:px-28'
   id='experience'
 >
   <h2 class='mb-6 flex items-center justify-center gap-2 text-3xl text-white'>
@@ -17,7 +17,7 @@ import ExperienceTime from '../components/Experience/ExperienceTime.astro'
     <JobIcon class='size-8' />
   </h2>
   <div id='accordion-open' data-accordion='open' class='w-full'>
-    <ol class='relative border-s border-gray-700'>
+    <ol class='relative flex flex-col gap-5 border-s border-gray-700'>
       {
         Experiences.map((exp) => (
           <li>
