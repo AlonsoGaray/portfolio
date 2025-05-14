@@ -3,9 +3,10 @@
     "id": 4,
     "title": "Full Stack Developer",
     "company": "Ensolvers",
-    "current": true,
+    "current": false,
     "startDate": "Jun 2022",
-    "endDate": "",
+    "endDate": "Apr 2025",
+    "timeAge": "2 years & 10 months",
     "description": [
       "Supported and maintained multiple projects including Nue.Life, Ticketon, and Hyros/Htalk as a Full Stack Developer.",
       "Developed and successfully implemented REST APIs using Java and Spring Boot, resulting in improved efficiency and responsiveness of the application.",
