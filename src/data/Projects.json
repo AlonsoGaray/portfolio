@@ -1,5 +1,11 @@
 [
   {
+    "title": "Happy Merch",
+    "description": "Webapp to edit and create custom merchandise. Also includes an admin panel to manage products, elements, background, orders, and users.",
+    "image": "/projects/HappyMerch.png",
+    "youtubeUrl": "https://www.youtube.com/embed/3Gul1VgjRLc"
+  },
+  {
     "title": "Interguide",
     "description": "Community where developers share the questions they were asked in interviews to help others thrives in their future interviews.",
     "externalUrl": "https://interguide.netlify.app/",
