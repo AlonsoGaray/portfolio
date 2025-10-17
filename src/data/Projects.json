@@ -18,19 +18,5 @@
     "externalUrl": "https://clens.netlify.app/",
     "github": "https://github.com/GilbertHuarcaya/top-v17-frontend-clens",
     "image": "/projects/clens.webp"
-  },
-  {
-    "title": "Pokemon TCG Collector",
-    "description": "Website to keep track of your Pokémon TCG collection.",
-    "externalUrl": "https://eot-test-frontend-agp.vercel.app/",
-    "github": "https://github.com/AlonsoGaray/eot-test-frontend",
-    "image": "/projects/pokemon.webp"
-  },
-  {
-    "title": "My Notes",
-    "description": "Website to create, tag and organize all your notes.",
-    "externalUrl": "https://alonsogp-my-notes.netlify.app/",
-    "github": "https://github.com/AlonsoGaray/my-notes",
-    "image": "/projects/notes.webp"
   }
 ]

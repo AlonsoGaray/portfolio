@@ -1,12 +1,12 @@
 [
   {
-    "id": 4,
+    "id": 3,
     "title": "Full Stack Developer",
     "company": "Ensolvers",
     "current": false,
-    "startDate": "Jun 2022",
-    "endDate": "Apr 2025",
-    "timeAge": "2 years & 10 months",
+    "startDate": "Jul 2022",
+    "endDate": "Jul 2025",
+    "timeAge": "3 years & 1 month",
     "description": [
       "Supported and maintained multiple projects including Nue.Life, Ticketon, and Hyros/Htalk as a Full Stack Developer.",
       "Developed and successfully implemented REST APIs using Java and Spring Boot, resulting in improved efficiency and responsiveness of the application.",
@@ -31,41 +31,13 @@
     ]
   },
   {
-    "id": 3,
-    "title": "Full Stack Developer",
-    "company": "Make it Real",
-    "current": false,
-    "startDate": "Nov 2021",
-    "endDate": "Feb 2022",
-    "timeAge": "4 months",
-    "description": [
-      "Implemented full stack development techniques to create highly functional and user-friendly applications.",
-      "Successfully collaborated with a team on the development of Clens, contributing to its successful launch and positive user feedback.",
-      "Successfully develop the web app Interguide (personal project)."
-    ],
-    "skills": [
-      "Netlify",
-      "MongoDB",
-      "Jira",
-      "Node.js",
-      "Socket.io",
-      "Heroku",
-      "React",
-      "MERN Stack",
-      "GitHub",
-      "Git",
-      "Express.js",
-      "Scrum"
-    ]
-  },
-  {
     "id": 2,
     "title": "Solution Assistant - Level 1",
     "company": "Everis (NTT Data)",
     "current": false,
-    "startDate": "Nov 2019",
-    "endDate": "Jul 2020",
-    "timeAge": "9 months",
+    "startDate": "Jan 2020",
+    "endDate": "Dec 2021",
+    "timeAge": "2 years",
     "description": [
       "Supported and maintained the Pacifico Seguros' Ecommerce SOAT Online project, ensuring smooth operations and minimizing downtime.",
       "Analyzed and resolved incidences, problems, and requirements managed through ServiceNow for web portals, achieving a 20% reduction in ticket resolution time."
